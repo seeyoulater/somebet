@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Ping from "@/components/Ping.vue";
-import FooterUsers from "@/components/FooterUsers.vue";
+import { Ping } from "@/widgets/Ping";
+import FooterUsers from "./ui/FooterUsers.vue";
 import { Button, Space } from "@/shared/ui";
 import { FooterMenu } from "./ui/FooterMenu";
 </script>

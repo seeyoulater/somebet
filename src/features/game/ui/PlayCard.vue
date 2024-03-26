@@ -1,11 +1,9 @@
 <script lang="ts" setup>
-import CardIcon from "@/components/Icons/CardIcon.vue";
-import CardEmptyIcon from "@/components/Icons/CardEmptyIcon.vue";
-import { type Component, computed, useAttrs } from "vue";
+import CardIcon from "@/shared/ui/Icons/CardIcon.vue";
+import CardEmptyIcon from "@/shared/ui/Icons/CardEmptyIcon.vue";
+import { type Component, computed } from "vue";
 
 type CardType = "card" | "empty";
-
-defineEmits(["select"]);
 
 const props = defineProps<{
   type: CardType;
@@ -16,15 +14,12 @@ const CARD_MAP: Record<CardType, Component> = {
   empty: CardEmptyIcon,
 };
 
-const component = computed(() => CARD_MAP[props.type]);
-const classes = computed(() => ({
-  "play-card": true,
-}));
+const cardComponent = computed(() => CARD_MAP[props.type]);
 </script>
 
 <template>
-  <div :class="classes">
-    <component :is="component" />
+  <div class="play-card">
+    <component :is="cardComponent" />
     <div v-if="$slots.default" class="backdrop"><slot /></div>
   </div>
 </template>

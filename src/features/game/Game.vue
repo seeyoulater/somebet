@@ -117,10 +117,6 @@ const onCardTap = async (index: number) => {
   cursor: pointer;
   transition: transform 160ms linear;
   z-index: 2;
-
-  // &:hover {
-  //   transform: scale(1.01) translateY(-2px);
-  // }
 }
 
 .mirror {
@@ -142,10 +138,5 @@ const onCardTap = async (index: number) => {
     position: absolute;
     top: 0;
   }
-}
-
-.card,
-.mirror {
-  // transform: scale(0.5);
 }
 </style>

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import Sidebar from "./Sidebar.vue";
+import { Sidebar } from "@/widgets/Sidebar";
 import { Space } from "@/shared/ui";
 import { Game } from "@/features/game";
 </script>

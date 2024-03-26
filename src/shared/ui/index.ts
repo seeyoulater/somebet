@@ -5,3 +5,5 @@ export * from "./Avatar";
 export * from "./Icon";
 export * from "./Text";
 export * from "./Input";
+export * from "./Tabs";
+export * from "./FormControl";

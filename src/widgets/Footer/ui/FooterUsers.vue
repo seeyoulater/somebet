@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { ScoreCard, Space } from "@/shared/ui";
-import { createUser } from "../mock";
+import { createUser } from "@/mock";
 import { ComponentInstance, computed, onMounted, ref } from "vue";
 import { animate } from "motion";
 

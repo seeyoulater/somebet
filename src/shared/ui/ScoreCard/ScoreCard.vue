@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { Space, Avatar, Icon, Text } from "@/shared/ui";
-import CoinIcon from "../../../components/Icons/CoinIcon.vue";
+import CoinIcon from "@/shared/ui/Icons/CoinIcon.vue";
 import { computed } from "vue";
 
 const props = defineProps<{

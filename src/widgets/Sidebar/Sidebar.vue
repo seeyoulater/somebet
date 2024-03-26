@@ -1,8 +1,14 @@
 <script lang="ts" setup>
-import CoinIcon from "./Icons/CoinIcon.vue";
-import FormControl from "./FormControl.vue";
-import { Button, Space, Icon, Input } from "@/shared/ui";
-import Tabs, { Tab } from "./Tabs.vue";
+import CoinIcon from "@/shared/ui/Icons/CoinIcon.vue";
+import {
+  Button,
+  Space,
+  Icon,
+  Input,
+  Tabs,
+  Tab,
+  FormControl,
+} from "@/shared/ui";
 
 const tabs: Tab[] = [
   { label: "Bet", slot: "bet" },

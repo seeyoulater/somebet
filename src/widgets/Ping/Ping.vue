@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import { Space, Icon, Text } from "@/shared/ui";
-import PingIcon from "./Icons/PingIcon.vue";
+import PingIcon from "@/shared/ui/Icons/PingIcon.vue";
 
 defineProps<{
   ping: number;

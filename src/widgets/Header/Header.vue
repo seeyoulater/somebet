@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import LogoIcon from "@/components/Icons/LogoIcon.vue";
-import HeaderProfile from "@/components/HeaderProfile.vue";
+import LogoIcon from "@/shared/ui/Icons/LogoIcon.vue";
+import HeaderProfile from "./ui/HeaderProfile.vue";
 import { HeaderMenu } from "./ui/HeaderMenu";
 import { Button, Icon } from "@/shared/ui";
-import MenuIcon from "@/components/Icons/MenuIcon.vue";
+import MenuIcon from "@/shared/ui/Icons/MenuIcon.vue";
 </script>
 
 <template>

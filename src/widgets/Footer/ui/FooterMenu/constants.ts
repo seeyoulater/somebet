@@ -1,8 +1,8 @@
-import KeyboardIcon from "@/components/Icons/KeyboardIcon.vue";
-import LockIcon from "@/components/Icons/LockIcon.vue";
-import QuestionIcon from "@/components/Icons/QuestionIcon.vue";
-import SettingsIcon from "@/components/Icons/SettingsIcon.vue";
-import StatsIcon from "@/components/Icons/StatsIcon.vue";
+import KeyboardIcon from "@/shared/ui/Icons/KeyboardIcon.vue";
+import LockIcon from "@/shared/ui/Icons/LockIcon.vue";
+import QuestionIcon from "@/shared/ui/Icons/QuestionIcon.vue";
+import SettingsIcon from "@/shared/ui/Icons/SettingsIcon.vue";
+import StatsIcon from "@/shared/ui/Icons/StatsIcon.vue";
 
 export const FOOTER_MENU = [
   {

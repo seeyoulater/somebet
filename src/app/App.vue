@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Layout from "../components/Layout.vue";
-import MainPage from "../components/MainPage.vue";
+import Layout from "./ui/Layout.vue";
+import MainPage from "@/pages/MainPage.vue";
 </script>
 
 <template>
