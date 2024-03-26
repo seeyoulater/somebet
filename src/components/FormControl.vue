@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import {Space} from "@/shared/ui";
+import { Space } from "@/shared/ui";
 defineProps<{
   label: string;
 }>();

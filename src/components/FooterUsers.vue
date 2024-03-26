@@ -40,7 +40,7 @@ onMounted(() => {
       delay: 0.4,
       duration: 2,
       easing: [0.22, 0.03, 0.1, 1],
-    }
+    },
   );
 });
 

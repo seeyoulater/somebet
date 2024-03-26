@@ -1,1 +1,1 @@
-export { default as Space } from './Space.vue' 
+export { default as Space } from "./Space.vue";

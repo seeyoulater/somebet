@@ -2,8 +2,8 @@
 import LogoIcon from "@/components/Icons/LogoIcon.vue";
 import HeaderProfile from "@/components/HeaderProfile.vue";
 import { HeaderMenu } from "./ui/HeaderMenu";
-import { Button, Icon } from '@/shared/ui'
-import MenuIcon from '@/components/Icons/MenuIcon.vue'
+import { Button, Icon } from "@/shared/ui";
+import MenuIcon from "@/components/Icons/MenuIcon.vue";
 </script>
 
 <template>
@@ -12,11 +12,11 @@ import MenuIcon from '@/components/Icons/MenuIcon.vue'
       <LogoIcon />
     </a>
 
-    <HeaderMenu class="desktop-menu"/>
+    <HeaderMenu class="desktop-menu" />
 
     <Button variant="dark" class="burger">
       <Icon>
-        <MenuIcon/>
+        <MenuIcon />
       </Icon>
     </Button>
 
@@ -51,7 +51,8 @@ import MenuIcon from '@/components/Icons/MenuIcon.vue'
 }
 
 @include media("<desktop") {
-  .desktop-menu,.logo {
+  .desktop-menu,
+  .logo {
     display: none;
   }
 }

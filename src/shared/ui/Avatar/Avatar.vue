@@ -11,32 +11,32 @@ const props = withDefaults(
   }>(),
   {
     size: "md",
-  }
+  },
 );
 
 const SizeMap: Record<AvatarSize, string> = {
-  md: '24px',
-  lg: '36px',
-  xl: '46px',
-}
+  md: "24px",
+  lg: "36px",
+  xl: "46px",
+};
 
 const classes = computed(() => ({
   avatar: true,
 }));
 
 const style = computed(() => {
-  const variables: CSSProperties = {}
+  const variables: CSSProperties = {};
 
-  if(SizeMap[props.size]) {
-    variables['--avatar-size'] = SizeMap[props.size]
-  }
-  
-  if(props.mobileSize && SizeMap[props.mobileSize]) {
-    variables['--avatar-mobile-size'] = SizeMap[props.mobileSize]
+  if (SizeMap[props.size]) {
+    variables["--avatar-size"] = SizeMap[props.size];
   }
 
-  return variables
-})
+  if (props.mobileSize && SizeMap[props.mobileSize]) {
+    variables["--avatar-mobile-size"] = SizeMap[props.mobileSize];
+  }
+
+  return variables;
+});
 </script>
 
 <template>
@@ -52,8 +52,8 @@ const style = computed(() => {
   overflow: hidden;
   border-radius: 50%;
   flex-shrink: 0;
-  
-  @include media('<desktop') {
+
+  @include media("<desktop") {
     width: var(--avatar-mobile-size, var(--avatar-size));
     height: var(--avatar-mobile-size, var(--avatar-size));
   }

@@ -1,1 +1,1 @@
-export { default as HeaderMenu } from './HeaderMenu.vue'
+export { default as HeaderMenu } from "./HeaderMenu.vue";

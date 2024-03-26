@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import PlusIcon from "./Icons/PlusIcon.vue";
-import { Button, ScoreCard, Space, Avatar, Icon } from '@/shared/ui'
+import { Button, ScoreCard, Space, Avatar, Icon } from "@/shared/ui";
 
 import { createUser } from "../mock";
 
@@ -16,7 +16,7 @@ const user = createUser();
       </Icon>
       <span>Пополнить</span>
     </Button>
-    <Avatar :src="user.avatar" size="xl" mobileSize="lg"/>
+    <Avatar :src="user.avatar" size="xl" mobileSize="lg" />
   </Space>
 </template>
 

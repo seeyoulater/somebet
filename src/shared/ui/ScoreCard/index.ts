@@ -1,1 +1,1 @@
-export { default as ScoreCard } from './ScoreCard.vue'
+export { default as ScoreCard } from "./ScoreCard.vue";

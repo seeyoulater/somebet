@@ -5,22 +5,21 @@ import { type Component, computed, useAttrs } from "vue";
 
 type CardType = "card" | "empty";
 
-defineEmits(['select'])
+defineEmits(["select"]);
 
 const props = defineProps<{
   type: CardType;
-}>()
+}>();
 
 const CARD_MAP: Record<CardType, Component> = {
   card: CardIcon,
   empty: CardEmptyIcon,
 };
 
-
 const component = computed(() => CARD_MAP[props.type]);
-const classes = computed(()=> ({
-  'play-card': true,
-}))
+const classes = computed(() => ({
+  "play-card": true,
+}));
 </script>
 
 <template>

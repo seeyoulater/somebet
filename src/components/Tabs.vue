@@ -19,7 +19,7 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
-import {Space} from "@/shared/ui";
+import { Space } from "@/shared/ui";
 
 export type Tab = {
   label: string;

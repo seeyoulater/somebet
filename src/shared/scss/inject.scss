@@ -1,3 +1,5 @@
-@import 'include-media';
+@import "include-media";
 
-$breakpoints: (desktop: 1620px);
+$breakpoints: (
+  desktop: 1620px,
+);

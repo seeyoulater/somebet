@@ -2,7 +2,7 @@
 import { Space } from "@/shared/ui";
 import PlayCard from "./ui/PlayCard.vue";
 import WithBetButtons from "./ui/WithBetButtons.vue";
-import Deck from './ui/Deck.vue'
+import Deck from "./ui/Deck.vue";
 import { animate } from "motion";
 import { ComponentInstance, ref } from "vue";
 
@@ -21,7 +21,7 @@ const shallowNodeCopy = (el: HTMLElement) => {
   copiedCard.style.position = "absolute";
   copiedCard.style.top = `${top}px`;
   copiedCard.style.left = `${left}px`;
-  copiedCard.classList.add('--transition')
+  copiedCard.classList.add("--transition");
 
   return copiedCard;
 };
@@ -32,12 +32,12 @@ const onCardTap = async (index: number) => {
   }
 
   const $clickedCard: HTMLElement = cards.value?.[index].$el;
-  const $containerEl: HTMLElement = container.value?.$el
+  const $containerEl: HTMLElement = container.value?.$el;
   const originRect: DOMRect = $clickedCard?.getBoundingClientRect();
   const targetRect: DOMRect = targetCard.value?.$el.getBoundingClientRect();
 
   if (![targetRect, originRect, $clickedCard, $containerEl].every(Boolean)) {
-    throw new Error('Missing required elements')
+    throw new Error("Missing required elements");
     return;
   }
 
@@ -50,18 +50,18 @@ const onCardTap = async (index: number) => {
   const animator = animate(
     cloned,
     {
-      width: targetRect.width + 'px',
-      height: targetRect.height + 'px',
+      width: targetRect.width + "px",
+      height: targetRect.height + "px",
       x: [null, targetRect.left - originRect.left],
       y: [null, targetRect.top - originRect.top],
       rotateX: [0, 10, 0],
       rotateY: 180,
-      scale: [1,1.1, 1.3, 1],
+      scale: [1, 1.1, 1.3, 1],
     },
     {
       duration: 1,
       easing: [0.22, 0.03, 0.26, 1],
-    }
+    },
   );
 
   await animator.finished;
@@ -77,7 +77,6 @@ const onCardTap = async (index: number) => {
       <PlayCard class="container__card" type="card" ref="targetCard">
         <Deck class="container__deck" :depth="4" />
       </PlayCard>
-      
     </WithBetButtons>
 
     <WithBetButtons :visibility="['desktop']">
@@ -130,7 +129,7 @@ const onCardTap = async (index: number) => {
 
 .container {
   position: relative;
-  
+
   @include media("<desktop") {
     --card-width: 120px;
   }
@@ -145,8 +144,8 @@ const onCardTap = async (index: number) => {
   }
 }
 
-.card, .mirror {
+.card,
+.mirror {
   // transform: scale(0.5);
 }
-
 </style>

@@ -5,24 +5,24 @@ import SettingsIcon from "@/components/Icons/SettingsIcon.vue";
 import StatsIcon from "@/components/Icons/StatsIcon.vue";
 
 export const FOOTER_MENU = [
-    {
-        to: '/',
-        icon: KeyboardIcon,
-    },
-    {
-        to: '/',
-        icon: LockIcon,
-    },
-    {
-        to: '/',
-        icon: StatsIcon,
-    },
-    {
-        to: '/',
-        icon: QuestionIcon,
-    },
-    {
-        to: '/',
-        icon: SettingsIcon,
-    },
-]
+  {
+    to: "/",
+    icon: KeyboardIcon,
+  },
+  {
+    to: "/",
+    icon: LockIcon,
+  },
+  {
+    to: "/",
+    icon: StatsIcon,
+  },
+  {
+    to: "/",
+    icon: QuestionIcon,
+  },
+  {
+    to: "/",
+    icon: SettingsIcon,
+  },
+];

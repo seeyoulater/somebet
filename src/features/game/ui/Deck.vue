@@ -2,8 +2,8 @@
 import PlayCard from "./PlayCard.vue";
 
 defineProps<{
-    depth: number
-}>()
+  depth: number;
+}>();
 </script>
 
 <template>

@@ -2,7 +2,7 @@
 import Ping from "@/components/Ping.vue";
 import FooterUsers from "@/components/FooterUsers.vue";
 import { Button, Space } from "@/shared/ui";
-import { FooterMenu } from './ui/FooterMenu'
+import { FooterMenu } from "./ui/FooterMenu";
 </script>
 
 <template>
@@ -11,7 +11,7 @@ import { FooterMenu } from './ui/FooterMenu'
       <Ping :ping="65" />
       <Button class="topup" variant="ghost">История игр</Button>
       <FooterUsers class="users" />
-      <FooterMenu class="menu"/>
+      <FooterMenu class="menu" />
     </Space>
   </footer>
 </template>
@@ -26,8 +26,8 @@ import { FooterMenu } from './ui/FooterMenu'
   display: flex;
   align-items: center;
   overflow: hidden;
-  
-  @include media('<desktop') {
+
+  @include media("<desktop") {
     height: 64px;
   }
 }
@@ -40,6 +40,6 @@ import { FooterMenu } from './ui/FooterMenu'
 }
 
 .menu {
-    margin-left: auto;
+  margin-left: auto;
 }
 </style>

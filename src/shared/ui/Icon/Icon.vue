@@ -3,11 +3,11 @@ import { computed, withDefaults } from "vue";
 
 const props = withDefaults(
   defineProps<{
-    size?: "sm" | "md" | "lg" | 'xl' | 'xxl';
+    size?: "sm" | "md" | "lg" | "xl" | "xxl";
   }>(),
   {
     size: "sm",
-  }
+  },
 );
 
 const classNames = computed(() => ["icon", `--size-${props.size}`]);

@@ -10,44 +10,44 @@ import TowerIcon from "@/components/Icons/TowerIcon.vue";
 import WheelIcon from "@/components/Icons/WheelIcon.vue";
 
 export const MENU_ITEMS = [
-    {
-        label: 'Crash',
-        icon: CrashIcon
-    },
-    {
-        label: 'Dice',
-        icon: DiceIcon,
-    },
-    {
-        label: 'Plinko',
-        icon: PlinkoIcon,
-    },
-    {
-        label: 'Roulette',
-        icon: RouteletteIcon,
-    },
-    {
-        label: 'Tower',
-        icon: TowerIcon,
-    },
-    {
-        label: 'Wheel',
-        icon: WheelIcon,
-    },
-    {
-        label: 'Slots',
-        icon: SlotsIcon,
-    },
-    {
-        label: 'Hilo',
-        icon: HiloIcon
-    },
-    {
-        label: 'Mines',
-        icon: MinesIcon
-    },
-    {
-        label: 'Keno',
-        icon: KenoIcon
-    },
-]
+  {
+    label: "Crash",
+    icon: CrashIcon,
+  },
+  {
+    label: "Dice",
+    icon: DiceIcon,
+  },
+  {
+    label: "Plinko",
+    icon: PlinkoIcon,
+  },
+  {
+    label: "Roulette",
+    icon: RouteletteIcon,
+  },
+  {
+    label: "Tower",
+    icon: TowerIcon,
+  },
+  {
+    label: "Wheel",
+    icon: WheelIcon,
+  },
+  {
+    label: "Slots",
+    icon: SlotsIcon,
+  },
+  {
+    label: "Hilo",
+    icon: HiloIcon,
+  },
+  {
+    label: "Mines",
+    icon: MinesIcon,
+  },
+  {
+    label: "Keno",
+    icon: KenoIcon,
+  },
+];

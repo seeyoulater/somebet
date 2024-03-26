@@ -1,19 +1,19 @@
 <script lang="ts" setup>
 import { computed } from "vue";
 
-type ButtonVariant = "primary" | "ghost" | 'dark';
-type ButtonSize = "sm" | "md" | "lg"
+type ButtonVariant = "primary" | "ghost" | "dark";
+type ButtonSize = "sm" | "md" | "lg";
 
 const props = withDefaults(
   defineProps<{
-    size?: ButtonSize
+    size?: ButtonSize;
     variant?: ButtonVariant;
     grow?: boolean;
   }>(),
   {
-    size: 'md',
+    size: "md",
     variant: "primary",
-  }
+  },
 );
 
 const classes = computed(() => {
@@ -56,7 +56,7 @@ const classes = computed(() => {
   &.--size-md {
     height: 40px;
 
-    @include media('<=desktop') {
+    @include media("<=desktop") {
       height: 36px;
       padding: 0 12px;
     }

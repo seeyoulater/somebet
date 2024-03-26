@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { Header } from "@/widgets/Header";
-import {Footer} from "@/widgets/Footer";
+import { Footer } from "@/widgets/Footer";
 </script>
 
 <template>

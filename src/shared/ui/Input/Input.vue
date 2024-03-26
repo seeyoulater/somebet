@@ -1,12 +1,12 @@
 <script lang="ts" setup>
 defineProps<{
-    placeholder?: string
-}>()
+  placeholder?: string;
+}>();
 </script>
 
 <template>
   <div class="input">
-    <input class="input__control" :placeholder="placeholder"/>
+    <input class="input__control" :placeholder="placeholder" />
     <div v-if="$slots.icon" class="input__icon">
       <slot name="icon" />
     </div>
@@ -30,7 +30,7 @@ defineProps<{
     padding: 0 18px;
 
     &::placeholder {
-        color: var(--blue-250);
+      color: var(--blue-250);
     }
   }
 

@@ -19,7 +19,7 @@ const props = withDefaults(
   {
     size: "md",
     color: "white",
-  }
+  },
 );
 
 const classNames = computed(() => {

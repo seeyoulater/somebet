@@ -10,7 +10,7 @@ const props = defineProps<{
 }>();
 
 const buttonIcon = computed(() =>
-  props.direction === "long" ? ArrowUpIcon : ArrowDownIcon
+  props.direction === "long" ? ArrowUpIcon : ArrowDownIcon,
 );
 
 const buttonClasses = computed(() => ["bet__button", `--${props.direction}`]);
