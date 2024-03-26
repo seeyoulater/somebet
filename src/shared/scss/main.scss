@@ -1,0 +1,51 @@
+@import 'normalize.css';
+
+:root {
+  --main-bg: #080911;
+  --white: #fff;
+  --blue-0: #131525;
+  --blue-100: #222646;
+  --blue-200: #3e447c;
+  --blue-250: #3F446D;
+  --blue-300: #6871c1;
+  --orange-100: #fc9b40;
+  --orange-200: #ffd05b;
+
+  --menu-text: #767FD1;
+
+  --border: #1A1D33;
+  --page-bg: #0C0E1C;
+
+  --sidebar-width-desktop: 385px;
+}
+
+html {
+  @font-face {
+    font-family: "Bahnschrift";
+    src: url("https://db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.eot");
+    src: url("https://db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.eot?#iefix")
+        format("embedded-opentype"),
+      url("https://db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.woff")
+        format("woff"),
+      url("https://db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.woff2")
+        format("woff2"),
+      url("https://db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.ttf")
+        format("truetype"),
+      url("https://db.onlinewebfonts.com/t/0a6ee448d1bd65c56f6cf256a7c6f20a.svg#Bahnschrift")
+        format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+body {
+  font-family: "Bahnschrift";
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 14px;
+}

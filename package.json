@@ -1,0 +1,28 @@
+{
+  "name": "vue3-bet",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "include-media": "^2.0.0",
+    "motion": "^10.17.0",
+    "normalize.css": "^8.0.1",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "prettier": "^3.2.5",
+    "sass": "^1.72.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}
